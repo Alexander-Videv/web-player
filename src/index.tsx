@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
+import { HashRouter, Routes, Route, Navigate } from 'react-router';
 
 import Home from './Home/home';
 import Upload from './Upload/upload';
@@ -66,7 +66,7 @@ function RegisterWrapper() {
 root.render(
   <React.StrictMode>
     <AudioPlayerProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Navigate to="/login" replace />} />
           <Route path='/home' element={<Home />} />
@@ -76,7 +76,7 @@ root.render(
           <Route path='/login' element={<LoginWrapper />} />
           <Route path='/register' element={<RegisterWrapper />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
 
 
       <AudioPlayerBar />

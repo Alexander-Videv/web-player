@@ -1,0 +1,121 @@
+.discover {
+    /* background-color: #202020; */
+    height: 100%;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    margin: auto;
+    height: 2%;
+    width: 80%;
+    /* background-color: #202020; */
+    color: #ebdbb2;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+}
+
+.search-bar input {
+    height: 100%;
+    width: 100%;
+    background-color: #202020;
+    border: 1px solid #343434;
+    border-radius: 20px;
+    /* transition: 2s; */
+    color: #ebdbb2;
+    padding: 10px;
+}
+
+.discover-data {
+    display: grid;
+    grid-auto-columns: 45%;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: min-content;
+    /* background-color: #202020; */
+    height: 100%;
+    width: 100%;
+
+    overflow: scroll;
+}
+
+.song-cell {
+    height: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #343434;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 5%;
+    overflow: scroll;
+    margin-left: 5%;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.song-title {
+    height: 45%;
+    /* overflow: scroll; */
+}
+
+.song-artist {
+    font-size: 14px;
+    color: #909090;
+    margin-top: 10px;
+}
+
+.song-art {
+    height: fit-content;
+    width: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.buttons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin: 10px;
+    text-decoration: none;
+    background-color: #ebdbb2;
+    border: none;
+    border-radius: 20px;
+    height: 2vw;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    scale: 1.2;
+}
+
+.playlists-popup {
+    position: absolute;
+    background-color: #202020f0;
+    border: 1px solid #689d6a;
+    padding: 20px;
+}
+
+.song-info {
+    display: flex;
+}
+
+.song-text {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}

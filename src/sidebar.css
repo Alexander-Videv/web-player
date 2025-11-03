@@ -1,0 +1,39 @@
+.sidebar {
+    height: 100%;
+    width: 10%;
+    display: flexbox;
+    padding: 1%;
+    background-color: #282828;
+    color: #ebdbb2;
+
+    text-align: center;
+    border-right: 1px solid #ebdbb2;
+}
+
+ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+li {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#profile-picture {
+    height: auto;
+    width: 100px;
+}

@@ -5,7 +5,7 @@ import './AudioPlayerBar.css'
 
 
 export default function AudioPlayerBar() {
-    const API = process.env.REACT_APP_API_URL;
+    const API = "https://web-player-backend.onrender.com";
     const { currentSong, nextSong, prevSong } = useAudioPlayer();
 
     return (

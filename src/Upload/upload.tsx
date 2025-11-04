@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './upload.css'
 import Sidebar from '../sidebar'
 
+const API = "https://web-player-backend.onrender.com";
+
 async function uploadSong(username: string, file: File, songTitle: string, artist: string, coverArtLink?: string) {
     const formData = new FormData();
     formData.append("username", username);
@@ -12,7 +14,7 @@ async function uploadSong(username: string, file: File, songTitle: string, artis
     if (coverArtLink)
         formData.append("cover_art", coverArtLink);
 
-    const res = await fetch("http://localhost:8081/upload", {
+    const res = await fetch(`${API}/upload`, {
         method: "POST",
         body: formData,
     });

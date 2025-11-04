@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import './playlists.css'
 import { useAudioPlayer } from "../context/AudioPlayerCtx";
 
-const API = process.env.REACT_APP_API_URL;
+const API = "https://web-player-backend.onrender.com";
 
 
 async function createPlaylist(name: string, username: string | undefined) {

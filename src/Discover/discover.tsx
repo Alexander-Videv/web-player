@@ -16,7 +16,7 @@ interface Playlist {
 
 function Discover() {
 
-    const API = process.env.REACT_APP_API_URL;
+    const API = "https://web-player-backend.onrender.com";
 
     const username = sessionStorage.getItem("user");
 

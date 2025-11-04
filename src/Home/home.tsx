@@ -15,7 +15,7 @@ interface RecentSong {
 
 function Home() {
 
-    const API = process.env.REACT_APP_API_URL;
+    const API = "https://web-player-backend.onrender.com";
 
     const [playlists_data, setPlaylists] = useState<any[]>([]);
     let username = sessionStorage.getItem('user');

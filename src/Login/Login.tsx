@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 function Login(props: { toggle: () => void }) {
 
-    const API = process.env.REACT_APP_API_URL;
+    const API = "https://web-player-backend.onrender.com";
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');

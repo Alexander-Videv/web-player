@@ -111,9 +111,6 @@
     z-index: 10;
 }
 
-.headers span {
-    position: relative;
-}
 
 .rename-popup {
     background-color: #202020f0;
@@ -178,6 +175,10 @@
 
 .new-playlist-dropdown p {
     width: min-content;
+}
+
+.pl-headers span {
+    position: relative;
 }
 
 .pl-headers {

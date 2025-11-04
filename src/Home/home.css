@@ -82,12 +82,12 @@
     overflow: scroll;
     width: 200%;
     margin-left: 20px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .song-item {
     height: fit-content;
-    width: 100%;
+    width: fit-content;
     overflow: scroll;
     /* margin: 10px; */
     margin-top: 30px;

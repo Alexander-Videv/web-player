@@ -178,6 +178,7 @@ function Playlists() {
         console.log(data);
 
         refreshPlaylists();
+        toggleRename();
     }
 
     useEffect(() => {

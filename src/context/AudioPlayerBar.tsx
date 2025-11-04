@@ -5,7 +5,7 @@ import './AudioPlayerBar.css'
 
 
 export default function AudioPlayerBar() {
-    const API = "https://web-player-backend.onrender.com";
+    const supabaseAPI = "https://ctbwchxwetjgpwusodoe.supabase.co/storage/v1/object/sign/uploads/";
     const { currentSong, nextSong, prevSong } = useAudioPlayer();
 
     return (
@@ -16,7 +16,7 @@ export default function AudioPlayerBar() {
                     : "No audio"}</p>
                 <div className="player">
                     <AudioPlayer
-                        src={`${API}${currentSong ? currentSong.file_path : undefined}`}
+                        src={`${supabaseAPI}${currentSong ? currentSong.file_path : undefined}`}
                         onClickNext={nextSong}
                         onClickPrevious={prevSong}
                         onEnded={nextSong}

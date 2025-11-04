@@ -5,7 +5,7 @@ import './AudioPlayerBar.css'
 
 
 export default function AudioPlayerBar() {
-    const supabaseAPI = "https://ctbwchxwetjgpwusodoe.supabase.co/storage/v1/object/sign/uploads/";
+    const supabaseAPI = "https://ctbwchxwetjgpwusodoe.supabase.co/storage/v1/object/public/uploads/";
     const { currentSong, nextSong, prevSong } = useAudioPlayer();
 
     return (
